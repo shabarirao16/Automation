@@ -1,0 +1,13 @@
+{
+    "projectId": "mdwcsp",
+    "integrationFolder": "cypress/integration",
+    "numTestsKeptInMemory": 5,
+    "env": {
+        "username": "testuser3636@io.co.za",
+        "password": "Password!@!@3636"
+    },
+    "video": true,
+    "retries": {
+        "runMode": 2
+    }
+}

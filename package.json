@@ -1,0 +1,30 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.6",
+    "cypress": "^7.5.0",
+    "cypress-cucumber-preprocessor": "^4.1.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
