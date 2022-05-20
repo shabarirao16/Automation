@@ -1,12 +1,24 @@
 [
   {
-    "FirstName": "Dean",
-    "LastName": "John",
-    "UserName":"deanjon",
+    "FirstName": "FName1",
+    "LastName": "LName1",
+    "UserName":"User1",
+    "Password": "Pass1",
     "Customer": "ABSAS",
-    "Role": "Sales Team",
-    "Email": "deanjohn@gmail.com",
-    "CellPhone": "777777777",
+    "Role": "Admin",
+    "Email": "admin@mail.com",
+    "CellPhone": "082555",
+    "viewport": "macbook-15"
+  },
+  {
+    "FirstName": "FName2",
+    "LastName": "LName2",
+    "UserName":"User2",
+    "Password": "Pass2",
+    "Customer": "ABSAS",
+    "Role": "Customer",
+    "Email": "Customer@mail.com",
+    "CellPhone": "083444",
     "viewport": "macbook-15"
   }
 
