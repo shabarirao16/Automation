@@ -1,6 +1,12 @@
 # Automation
 
 
+Getting Started
+
+These scripts are written using cypress which is one of the open source Automation tool trending over the market
+
+
+
 Prerequisites
 
 GIT
