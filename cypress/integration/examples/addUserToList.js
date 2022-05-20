@@ -18,10 +18,10 @@ describe('customer registration journey', () => {
                 cy.get('.smart-table-header-row').should('be.visible')
                 cy.get('[type="add"]').click();
                 cy.get('.modal-header').findByText('Add User').should('be.visible')
-                cy.get('[name="FirstName"]').type(firstName)
-                cy.get('[name="LastName"]').type(lastName)
-                cy.get('[name="UserName"]').type(firstName+id1)
-                cy.get('[name="Password"]').type("asdfgh")
+                cy.get('[name="FirstName"]').type(data.FirstName)
+                cy.get('[name="LastName"]').type(data.LastName)
+                cy.get('[name="UserName"]').type(data.FirstName+id1)
+                cy.get('[name="Password"]').type(data.Password)
                 cy.get('[name="optionsRadios"]').eq(0).check()
                 cy.get('[name="optionsRadios"]').eq(1).check()
                 cy.get('[name="RoleId"]').select(data.Role)
@@ -34,8 +34,8 @@ describe('customer registration journey', () => {
                 cy.get('tbody > tr').each((entry) => {
                     const StoreText1 = entry.find('td').eq(0).text();
                     const StoreText2 = entry.find('td').eq(1).text();
-                    if (StoreText1 === firstName && StoreText2 === lastName){
-                        cy.get(entry).find('td').eq(2).should('have.text',firstName+id1)
+                    if (StoreText1 === data.FirstName && StoreText2 === data.LastName){
+                        cy.get(entry).find('td').eq(2).should('have.text',data.FirstName+id1)
                         cy.get(entry).find('td').eq(4).should('have.text','')
                         cy.get(entry).find('td').eq(5).should('have.text',data.Role)
                         cy.get(entry).find('td').eq(6).should('have.text',data.Email)
